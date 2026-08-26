@@ -10,31 +10,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 551,
-    "timeDay": 551,
-    "timeWeek": 551,
-    "timeMonth": 551,
-    "timeYear": 551,
+    "time": 647,
+    "timeDay": 647,
+    "timeWeek": 647,
+    "timeMonth": 647,
+    "timeYear": 647,
     "dailyMinutesDown": {}
-  },
-  {
-    "name": "We Watch API",
-    "url": "https://wewatch.pt/api/health",
-    "icon": "https://icons.duckduckgo.com/ip3/wewatch.pt.ico",
-    "slug": "we-watch-api",
-    "status": "down",
-    "uptime": "56.57%",
-    "uptimeDay": "56.57%",
-    "uptimeWeek": "56.57%",
-    "uptimeMonth": "56.57%",
-    "uptimeYear": "56.57%",
-    "time": 484,
-    "timeDay": 484,
-    "timeWeek": 484,
-    "timeMonth": 484,
-    "timeYear": 484,
-    "dailyMinutesDown": {
-      "2026-08-26": 0
-    }
   }
 ]
