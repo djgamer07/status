@@ -4,6 +4,8 @@ repo: status
 sites:
   - name: We Watch
     url: https://wewatch.pt
+  - name: We Watch API
+    url: https://wewatch.pt/api/health/ping
 
 status-website:
   cname: status.wewatch.pt
