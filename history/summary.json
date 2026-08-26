@@ -10,11 +10,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 616,
-    "timeDay": 616,
-    "timeWeek": 616,
-    "timeMonth": 616,
-    "timeYear": 616,
+    "time": 622,
+    "timeDay": 622,
+    "timeWeek": 622,
+    "timeMonth": 622,
+    "timeYear": 622,
     "dailyMinutesDown": {}
   },
   {
@@ -22,19 +22,19 @@
     "url": "https://wewatch.pt/api/health/ping",
     "icon": "https://icons.duckduckgo.com/ip3/wewatch.pt.ico",
     "slug": "we-watch-api",
-    "status": "down",
-    "uptime": "61.01%",
-    "uptimeDay": "61.01%",
-    "uptimeWeek": "61.01%",
-    "uptimeMonth": "61.01%",
-    "uptimeYear": "61.01%",
-    "time": 475,
-    "timeDay": 475,
-    "timeWeek": 475,
-    "timeMonth": 475,
-    "timeYear": 475,
+    "status": "up",
+    "uptime": "5.62%",
+    "uptimeDay": "5.62%",
+    "uptimeWeek": "5.62%",
+    "uptimeMonth": "5.62%",
+    "uptimeYear": "5.62%",
+    "time": 467,
+    "timeDay": 467,
+    "timeWeek": 467,
+    "timeMonth": 467,
+    "timeYear": 467,
     "dailyMinutesDown": {
-      "2026-08-26": 0
+      "2026-08-26": 5
     }
   }
 ]
