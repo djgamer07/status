@@ -10,10 +10,13 @@ sites:
 status-website:
   cname: status.wewatch.pt
   name: We Watch Status
-  # Logo alojado no próprio repo (servido pelo GitHub Pages) — NUNCA na VPS,
-  # senão a página de estado perdia o logo exatamente quando o site está em baixo.
-  logoUrl: /logo.png
-  favicon: /logo.png
+  # Logo alojado no próprio repo (via raw.githubusercontent) — NUNCA na VPS,
+  # senão a página de estado perdia o logo exatamente quando o site está em
+  # baixo. Não usar um caminho relativo (/logo.png): o exportador do Sapper
+  # faz crawl dessa URL antes de os assets serem copiados, cria uma PASTA
+  # logo.png/ com o 404 e a cópia dos assets rebenta com EISDIR.
+  logoUrl: https://raw.githubusercontent.com/djgamer07/status/master/assets/logo.png
+  favicon: https://raw.githubusercontent.com/djgamer07/status/master/assets/logo.png
   theme: dark
   introTitle: "Estado do **We Watch**"
   introMessage: "Monitorização em tempo real do site e da API. Se algo estiver em baixo, já estamos a tratar disso."
