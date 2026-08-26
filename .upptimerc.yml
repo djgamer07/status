@@ -10,7 +10,11 @@ sites:
 status-website:
   cname: status.wewatch.pt
   name: We Watch Status
-  logoUrl: https://wewatch.pt/logo.png
+  # Logo alojado no próprio repo (servido pelo GitHub Pages) — NUNCA na VPS,
+  # senão a página de estado perdia o logo exatamente quando o site está em baixo.
+  logoUrl: /logo.png
+  favicon: /logo.png
+  theme: dark
   introTitle: "Estado do **We Watch**"
   introMessage: "Monitorização em tempo real do site e da API. Se algo estiver em baixo, já estamos a tratar disso."
   navbar:
@@ -18,3 +22,102 @@ status-website:
       href: /
     - title: wewatch.pt
       href: https://wewatch.pt
+  # Tema We Watch — a página inteira é pintada por variáveis CSS; o seletor
+  # duplicado (:root:root) garante que estas vencem o tema base "dark"
+  # independentemente da ordem de carregamento.
+  css: >-
+    :root:root {
+      --body-background-color: #0c0a18;
+      --body-text-color: #f4f4f8;
+      --card-background-color: #181229;
+      --nav-background-color: #140f24;
+      --nav-border-bottom-color: #2a2350;
+      --nav-current-border-bottom-color: #635bed;
+      --card-border-color: #2a2350;
+      --down-border-left-color: #f87171;
+      --down-background-color: #3d1420;
+      --degraded-border-left-color: #fbbf24;
+      --up-border-left-color: #34d399;
+      --tag-color: #0c0a18;
+      --tag-up-background-color: #34d399;
+      --tag-down-background-color: #f87171;
+      --tag-degraded-background-color: #fbbf24;
+      --change-background-color: #fbbf24;
+      --error-button-border-color: #4f46e5;
+      --error-button-background-color: #635bed;
+      --error-button-color: #ffffff;
+      --submit-button-border-color: #4f46e5;
+      --submit-button-background-color: #635bed;
+      --submit-button-color: #ffffff;
+      --graph-opacity: 1;
+      --graph-filter: none;
+    }
+    body {
+      background-image: radial-gradient(circle at 50% 0%, rgba(99, 91, 237, 0.18), transparent 55%);
+      background-repeat: no-repeat;
+    }
+    a { color: #8b83f7; }
+    img[alt="We Watch Status"] { border-radius: 8px; }
+
+i18n:
+  locale: pt-PT
+  activeIncidents: Incidentes ativos
+  allSystemsOperational: Todos os sistemas operacionais
+  incidentReport: "Relatório do incidente #$NUMBER →"
+  activeIncidentSummary: Aberto a $DATE com $POSTS atualizações
+  incidentTitle: Detalhes do incidente $NUMBER
+  incidentDetails: Detalhes do incidente
+  incidentFixed: Resolvido
+  incidentOngoing: Em curso
+  incidentOpenedAt: Aberto a
+  incidentClosedAt: Fechado a
+  incidentViewOnGitHub: Ver e subscrever no GitHub
+  incidentCommentSummary: Publicado a $DATE por $AUTHOR
+  incidentBack: ← Voltar a todos os incidentes
+  pastIncidents: Incidentes anteriores
+  pastIncidentsResolved: Resolvido em $MINUTES minutos com $POSTS atualizações
+  liveStatus: Estado em direto
+  overallUptime: "Disponibilidade total: $UPTIME"
+  overallUptimeTitle: Disponibilidade total
+  averageResponseTime: "Tempo de resposta médio: $TIMEms"
+  averageResponseTimeTitle: Resposta média
+  sevelDayResponseTime: Tempo de resposta (7 dias)
+  responseTimeMs: Tempo de resposta (ms)
+  up: Online
+  down: Em baixo
+  degraded: Degradado
+  ms: ms
+  loading: A carregar
+  navGitHub: GitHub
+  footer: Página [open source]($REPO), monitorizada com [Upptime](https://upptime.js.org)
+  errorTitle: Ocorreu um erro
+  errorIntro: Ocorreu um erro ao obter o estado mais recente.
+  errorText: Tenta novamente dentro de momentos.
+  errorHome: Ir para a página inicial
+  pastScheduledMaintenance: Manutenções agendadas anteriores
+  scheduledMaintenance: Manutenção agendada
+  scheduledMaintenanceSummaryStarted: Começou a $DATE, duração de $DURATION minutos
+  scheduledMaintenanceSummaryStarts: Começa a $DATE, duração de $DURATION minutos
+  startedAt: Começou a
+  startsAt: Começa a
+  duration: Duração
+  durationMin: $DURATION minutos
+  incidentCompleted: Concluído
+  incidentScheduled: Agendado
+  duration24H: 24h
+  duration7D: 7d
+  duration30D: 30d
+  duration1Y: 1a
+  durationAll: tudo
+  rateLimitExceededTitle: Limite de pedidos excedido
+  rateLimitExceededIntro: Excedeste o número de pedidos permitidos por hora — aguarda um pouco antes de voltar a aceder. Em alternativa, podes adicionar um Personal Access Token do GitHub para continuar a usar a página.
+  rateLimitExceededWhatDoesErrorMean: O que significa este erro?
+  rateLimitExceededErrorMeaning: Esta página usa a API do GitHub para obter dados em tempo real sobre o estado dos serviços. Por omissão, o GitHub permite 60 pedidos por hora a cada endereço IP, que já foram consumidos.
+  rateLimitExceededErrorHowCanFix: Como posso resolver?
+  rateLimitExceededErrorFix: Podes aguardar uma hora até o limite do teu IP ser reposto, ou adicionar um Personal Access Token do GitHub, que dá mais 5.000 pedidos por hora.
+  rateLimitExceededGeneratePAT: Aprende a gerar um Personal Access Token
+  rateLimitExceededHasSet: Tens um personal access token configurado.
+  rateLimitExceededRemoveToken: Remover token
+  rateLimitExceededGitHubPAT: Personal Access Token do GitHub
+  rateLimitExceededCopyPastePAT: Copia e cola o teu token
+  rateLimitExceededSaveToken: Guardar token
