@@ -23,18 +23,16 @@
     "icon": "https://icons.duckduckgo.com/ip3/wewatch.pt.ico",
     "slug": "we-watch-api",
     "status": "up",
-    "uptime": "5.62%",
-    "uptimeDay": "5.62%",
-    "uptimeWeek": "5.62%",
-    "uptimeMonth": "5.62%",
-    "uptimeYear": "5.62%",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
     "time": 467,
     "timeDay": 467,
     "timeWeek": 467,
     "timeMonth": 467,
     "timeYear": 467,
-    "dailyMinutesDown": {
-      "2026-08-26": 5
-    }
+    "dailyMinutesDown": {}
   }
 ]
